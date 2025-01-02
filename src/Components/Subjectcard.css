@@ -19,3 +19,59 @@
   margin-right: auto;
   margin-top: 3vh;
 }
+
+
+/* Hide scrollbar but maintain functionality */
+.hide-scrollbar {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Container styles */
+.subjects-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem; /* 6 in tailwind units */
+  padding-bottom: 1rem; /* 4 in tailwind units */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Card styles */
+.subject-card {
+  scroll-snap-align: center;
+  min-width: 16rem; /* w-64 equivalent */
+  transition: all 0.3s ease;
+}
+
+.subject-card:hover {
+  transform: scale(1.02);
+}
+
+/* Card image */
+.card-image {
+  width: 100%;
+  height: 12rem; /* h-48 equivalent */
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Hover overlay */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.subject-card:hover .card-overlay {
+  opacity: 0.1;
+}

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Search, Users, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+
+
 import "./Subjectcard.css";
 // Simple Card Components
 const Card: React.FC<{
@@ -219,8 +221,9 @@ const InstitutionDashboard = () => {
           id="subjects-container"
           className="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory"
           style={{
-            ...styles.hideScrollbar,
-            scrollBehavior: 'smooth'
+            // ...styles.hideScrollbar,
+            scrollbarWidth:'none',
+            scrollBehavior: 'smooth',
           }}
           variants={containerVariants}
           initial="hidden"
