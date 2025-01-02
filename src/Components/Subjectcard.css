@@ -1,0 +1,21 @@
+.subjects-container {
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  /* Hide scrollbar for WebKit-based browsers */
+  .subjects-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .min-h-screen {
+    min-height: 64vh;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+}

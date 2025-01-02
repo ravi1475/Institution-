@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7eaff;
+    color: #333;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Profile Card Styles */
+  .profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .edit-profile {
+    background: #5a67d8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .edit-profile:hover {
+    background: #434190;
+  }
+  
+  .profile-details .detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .status-toggle {
+    cursor: pointer;
+  }
+  
+  /* Data Card Styles */
+  .data-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .data-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  .growth {
+    color: #38a169;
+  }
+  
+  .data-table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .view-all {
+    text-align: center;
+    color: #5a67d8;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .view-all:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-card,
+    .data-card {
+      width: 90%;
+    }
+  }
+  
