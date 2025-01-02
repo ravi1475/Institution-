@@ -231,7 +231,7 @@ const ExamStatisticsDashboard = () => {
   );
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8 max-w-5xl mx-auto">
+    <div className="bg-white rounded-xl shadow-lg p-8 max-w-6xl mx-auto">
       <div className="space-y-8">
         <div className="flex items-center justify-between">
           <div>
