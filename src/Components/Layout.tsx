@@ -93,9 +93,9 @@ const DashboardHeader: React.FC = () => {
   const [showSearchResults, setShowSearchResults] = useState<boolean>(false);
   
   const instituteInfo: InstituteInfo = {
-    name: "Pathania Public School",
+    name: "Institution Dashboard",
     address: "A-11 Janakpuri East, Delhi",
-    profileImage: "/images.png",
+    profileImage: "/Im.jpeg",
     status: true,
     chatHistory: 0,
     savedChat: 0,

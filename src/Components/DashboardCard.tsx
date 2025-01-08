@@ -50,13 +50,13 @@ const DashboardCard: React.FC = () => {
       <div className="min-w-[350px] bg-gradient-to-br from-purple-200 via-white to-blue-200 rounded-lg shadow-md p-4 flex flex-col items-center text-center">
         <div className="relative">
           <img
-            src="/images.png"
+            src="/Im.jpeg"
             alt="Profile"
             className="w-16 h-16 rounded-full border-3 border-white object-cover shadow-md"
           />
         </div>
-        <h2 className="text-lg font-bold text-gray-800 mt-">Pathania Public School</h2>
-        <p className="text-sm text-gray-600"> Rohtak</p>
+        <h2 className="text-lg font-bold text-gray-800 mt-">Institution Dashboard</h2>
+        <p className="text-sm text-gray-600"> India</p>
         <button className="mt-4 px-4 py-1.5 text-sm text-white bg-gradient-to-r from-purple-700 to-blue-700 rounded-full shadow-sm">
           Edit Profile
         </button>
